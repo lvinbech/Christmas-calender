@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* mobile first grid layout */
+.grid-1 {
+    display: grid;
+    width: 96%;
+    max-width: 900px;
+    margin: 2% auto;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 25px;
+     
+    grid-template-areas:    "t      t       t"
+                        "d23    d20     d12"
+                        "d2     d14     d4"
+                        "d5     d22     d16"
+                        "d1     d7      d9"
+                        "d10    d11     d18"
+                        "d13    d3      d15"
+                        "d6     d17     d8"
+                        "d19    d24     d21";
+
+   }
+
+  /* individual items */
+  .title {
+    grid-area: t;
+  }
+  .day-1 {
+      grid-area: d1;
+  }
+  .day-1 .back {
+    background: url(../img/SVG/stjerne.svg) no-repeat;
+    background-position: center;
+  }
+  .day-2 {
+    grid-area: d2;
+  }
+  .day-2 .back {
+    background: url(../img/SVG/snowflake.svg) no-repeat;
+    background-position: center;
+  }
+  .day-3 {
+    grid-area: d3;
+  }
+  .day-3 .back {
+    background: url(../img/SVG/snemand.svg) no-repeat;
+    background-position: center;
+  }
+  .day-4 {
+    grid-area: d4;
+  }
+  .day-4 .back {
+    background: url(../img/SVG/rensdyr_1.svg) no-repeat;
+    background-position: center;
+  }
+  .day-5 {
+    grid-area: d5;
+  }
+  .day-5 .back {
+    background: url(../img/SVG/nissehue.svg) no-repeat;
+    background-position: center;
+  }
+  .day-6 {
+    grid-area: d6;
+  }
+  .day-6 .back {
+    background: url(../img/SVG/klokke.svg) no-repeat;
+    background-position: center;
+  }
+  .day-7 {
+    grid-area: d7;
+  }
+  .day-7 .back {
+    background: url(../img/SVG/juletræ.svg) no-repeat;
+    background-position: center;
+  }
+  .day-8 {
+    grid-area: d8;
+  }
+  .day-8 .back {
+    background: url(../img/SVG/julesok.svg) no-repeat;
+    background-position: center;
+  }
+  .day-9 {
+    grid-area: d9;
+  }
+  .day-9 .back {
+    background: url(../img/SVG/julekulge.svg) no-repeat;
+    background-position: center;
+  }
+  .day-10 {
+    grid-area: d10;
+  }
+  .day-10 .back {
+    background: url(../img/SVG/gave.svg) no-repeat;
+    background-position: center;
+  }
+  .day-11 {
+    grid-area: d11;
+  }
+  .day-11 .back {
+    background: url(../img/SVG/candycane.svg) no-repeat;
+    background-position: center;
+  }
+  .day-12 {
+    grid-area: d12;
+  }
+  .day-12 .back {
+    background: url(../img/SVG/SVG/julehjerte.svg) no-repeat;
+    background-position: center;
+  }
+  .day-13 {
+    grid-area: d13;
+  }
+  .day-13 .back {
+    background: url(../img/SVG/SVG/julelys.svg) no-repeat;
+    background-position: center;
+  }
+  .day-14 {
+    grid-area: d14;
+  }
+  .day-14 .back {
+    background: url(../img/SVG/hmm.svg) no-repeat;
+    background-position: center;
+  }
+  .day-15 {
+    grid-area: d15;
+  }
+  .day-15 .back {
+    background: url(../img/SVG/SVG/julehjert2.svg) no-repeat;
+    background-position: center;
+  }
+  .day-16 {
+    grid-area: d16;
+  }
+  .day-16 .back {
+    background: url(../img/SVG/SVG/julekulge2.svg) no-repeat;
+    background-position: center;
+  }
+  .day-17 {
+    grid-area: d17;
+  }
+  .day-17 .back {
+    background: url(../img/SVG/SVG/julekugle\ 3.svg) no-repeat;
+    background-position: center;
+  }
+  .day-18 {
+    grid-area: d18;
+  }
+  .day-18 .back {
+    background: url(../img/SVG/VALDEMAR.svg) no-repeat;
+    background-position: center;
+  }
+  .day-19 {
+    grid-area: d19;
+  }
+  .day-19 .back {
+    background: url(../img/SVG/L.svg) no-repeat;
+    background-position: center;
+  }
+  .day-20 {
+    grid-area: d20;
+  }
+  .day-20 .back {
+    background: url(../img/SVG/K.svg) no-repeat;
+    background-position: center;
+  }
+  .day-21 {
+    grid-area: d21;
+  }
+  .day-21 .back {
+    background: url(../img/SVG/C.svg) no-repeat;
+    background-position: center;
+  }
+  .day-22 {
+    grid-area: d22;
+  }
+  .day-22 .back {
+    background: url(../img/SVG/B.svg) no-repeat;
+    background-position: center;
+  }
+  .day-23 {
+    grid-area: d23;
+  }
+  .day-23 .back {
+    background: url(../img/SVG/rasmus.svg) no-repeat;
+    background-position: center;
+  }
+  .day-24 {
+    grid-area: d24;
+  }
+  .day-24 .back {
+    background: url(../img/SVG/SVG/24.svg) no-repeat;
+    background-position: right;
+  }
+  /* door styles */
+ 
+.grid-1 input {
+    display: none;
+  }
+   
+  label {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+   
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    height: 120px;
+  }
+   
+  .door {
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 300ms;
+    border: 2px dashed transparent;
+    background-color: pink;
+  }
+
+  .door div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .door .back {
+    transform: rotateY(180deg);
+  }
+
+  label:hover .door {
+    border-color: #385052;
+  }
+   
+  :checked + .door {
+    transform: rotateY(180deg);
+  }
+
+   /* media query */
+@media only screen and (min-width: 500px) {
+   
+    .grid-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:    "t      t       t       d2      d7      d8"
+                              "t      t       t       d4      d11     d12"
+                              "t      t       t       d19     d9      d13"
+                              "d6     d1      d24     d24     d21     d20"
+                              "d17    d18     d24     d24     d5      d22"
+                              "d3     d23     d16     d14     d10     d15";
+    }
+     
+  }
+
+  
